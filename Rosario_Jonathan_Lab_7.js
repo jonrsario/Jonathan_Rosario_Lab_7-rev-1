@@ -6,26 +6,25 @@ var myMovie = function(title, year, studio, director) {
 	this.year = year;
 	this.studio = studio;
 	this.director = director;
-	{
-
-	};
 
 };
 
 for (var movie in jsonData.myFilm) {
 
-	if (movie === 0) {
+	if (movie == 0) {
 
 		var myFirstMovie = new myMovie(jsonData.myFilm[movie].title, jsonData.myFilm[movie].year, jsonData.myFilm[movie].studio, jsonData.myFilm[movie].director);
+		
+		console.log("My favorite movie is " + myFirstMovie);
 
-	} else if (movie === 1) {
+	} else if (movie == 1) {
 
 		var mySecondMovie = new myMovie(jsonData.myFilm[movie].title, jsonData.myFilm[movie].year, jsonData.myFilm[movie].studio, jsonData.myFilm[movie].director);
+		
+		console.log("This is not my favorite movie " + mySecondMovie);
 
-	}
-	;
-
+	};
+	
 };
 
-console.log("My favorite movie is " + myMovie());
-
+myMovie();
