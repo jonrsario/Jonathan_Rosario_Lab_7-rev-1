@@ -2,14 +2,14 @@
 
 var jsonData = {
 	
-	"myMovie":
+	"myFilm":
 	[
 	
 		{
 			"title": "Psycho",
 			"year": 1960,
 			"studio": "Paramount Pictures",
-			"director": "Alfred Hitchcock",
+			"director": "Alfred Hitchcock"
 			
 		},
 		{
@@ -17,7 +17,7 @@ var jsonData = {
 			"title": "Vertigo",
 			"year": 1958,
 			"studio": "Paramount Pictures",
-			"director": "Alfred Hitchcock",
+			"director": "Alfred Hitchcock"
 					
 		}
 	
