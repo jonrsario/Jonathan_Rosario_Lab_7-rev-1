@@ -15,16 +15,16 @@ for (var movie in jsonData.myFilm) {
 
 		var myFirstMovie = new myMovie(jsonData.myFilm[movie].title, jsonData.myFilm[movie].year, jsonData.myFilm[movie].studio, jsonData.myFilm[movie].director);
 		
-		console.log("My favorite movie is " + myFirstMovie);
-
 	} else if (movie == 1) {
 
 		var mySecondMovie = new myMovie(jsonData.myFilm[movie].title, jsonData.myFilm[movie].year, jsonData.myFilm[movie].studio, jsonData.myFilm[movie].director);
 		
-		console.log("This is not my favorite movie " + mySecondMovie);
-
 	};
 	
 };
 
 myMovie();
+
+console.log("My favorite movie is: " + myFirstMovie.title + " by " + myFirstMovie.director + " which was released by " + myFirstMovie.studio + " in " + myFirstMovie.year);
+
+console.log("This is not my favorite movie: " + mySecondMovie.title + " by " + mySecondMovie.director + " which was released by " + mySecondMovie.studio + " in " + mySecondMovie.year);
